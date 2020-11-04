@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { AppBar, Toolbar, IconButton, Typography } from '@material-ui/core'
-import { MovieFilter, AccountCircle, Store } from '@material-ui/icons'
+import { Store } from '@material-ui/icons'
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles(() => ({
@@ -25,9 +25,6 @@ export default function Header({ title }) {
           <Typography variant="h5" className={classes.title}>
             {title}
           </Typography>
-          <IconButton color="inherit">
-            <AccountCircle />
-          </IconButton>
         </Toolbar>
       </AppBar>
     </div>
@@ -39,5 +36,5 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  title: 'Movie Match'
+  title: 'Shoppy'
 }

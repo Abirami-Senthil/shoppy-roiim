@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import { Header, Footer } from '..'
 import { ThemeProvider } from '@material-ui/core/styles'
 import { Container } from '@material-ui/core'
-import { theme } from '../../util/common'
+import { theme } from '../../utils/common'
 
 export default function Layout({ children, title }) {
   return (
     <ThemeProvider theme={theme}>
       <div>
         <Header title={title} />
-        <Container maxWidth="sm">
+        <Container maxWidth="xl">
           <div>{children}</div>
         </Container>
         <Footer />
