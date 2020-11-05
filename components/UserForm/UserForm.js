@@ -50,6 +50,7 @@ export default function UserForm({ formData, handleFormDataChange }) {
                 type="date"
                 name="dob"
                 value={formData.dob}
+                onChange={handleFormDataChange}
               />
             </Grid>
           </Grid>
