@@ -39,6 +39,7 @@ export default function ProductCard({
   price,
   count,
   index,
+  imageUrl,
   increaseCount,
   decreaseCount
 }) {
@@ -49,8 +50,8 @@ export default function ProductCard({
     <Card className={classes.root}>
       <CardMedia
         className={classes.cover}
-        image="https://via.placeholder.com/200"
-        title="Product Image"
+        image={imageUrl}
+        title={productName}
       />
       <div className={classes.details}>
         <CardContent className={classes.content}>

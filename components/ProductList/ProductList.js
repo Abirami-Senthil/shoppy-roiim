@@ -18,6 +18,7 @@ export default function ProductList({
             index={index}
             increaseCount={increaseCount}
             decreaseCount={decreaseCount}
+            imageUrl={product.image}
           />
         )
       })}
